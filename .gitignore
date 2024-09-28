@@ -1,0 +1,10 @@
+Library/
+ Logs/
+ UserSettings/
+ obj/
+*.sln
+*.csproj
+*.sln
+*.userprefs
+*.unityproj
+*.DS_Store

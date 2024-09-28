@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|d:\\unity hub editior\\projects\\my project (1)\\assets\\combatunit\\combatunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\combatunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|d:\\unity hub editior\\projects\\my project (1)\\assets\\combatunit\\commchannelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\commchannelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\combatunit\\commchannelproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\commchannelproperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\interferenceunit\\interferenceunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\interferenceunit\\interferenceunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\combatunit\\moduleclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\moduleclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\combatunit\\channelcolor\\materialselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\channelcolor\\materialselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\combatunit\\rangespherevisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1CE1FEE-67BE-6533-73AA-CC578BE80DCD}|Assembly-CSharp.csproj|solutionrelative:assets\\combatunit\\rangespherevisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D639510A-B7C0-C64D-F6AD-66CC4ECACC64}|Assembly-CSharp-Editor.csproj|D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\assets\\editor\\commchannelpropertieseditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D639510A-B7C0-C64D-F6AD-66CC4ECACC64}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\commchannelpropertieseditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CombatUnit.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CombatUnit.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\CombatUnit.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CombatUnit.cs",
+              "RelativeToolTip": "Assets\\combatunit\\CombatUnit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T02:38:27.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommChannelPropertiesEditor.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\Editor\\CommChannelPropertiesEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\CommChannelPropertiesEditor.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\Editor\\CommChannelPropertiesEditor.cs",
+              "RelativeToolTip": "Assets\\Editor\\CommChannelPropertiesEditor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T07:24:29.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MaterialSelector.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\ChannelColor\\MaterialSelector.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\ChannelColor\\MaterialSelector.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\ChannelColor\\MaterialSelector.cs",
+              "RelativeToolTip": "Assets\\combatunit\\ChannelColor\\MaterialSelector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T06:42:32.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModuleClasses.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\ModuleClasses.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\ModuleClasses.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\ModuleClasses.cs",
+              "RelativeToolTip": "Assets\\combatunit\\ModuleClasses.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T16:12:50.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommChannelProperties.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CommChannelProperties.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\CommChannelProperties.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CommChannelProperties.cs",
+              "RelativeToolTip": "Assets\\combatunit\\CommChannelProperties.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAswAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T13:41:14.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InterferenceUnit.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\InterferenceUnit\\InterferenceUnit.cs",
+              "RelativeDocumentMoniker": "Assets\\InterferenceUnit\\InterferenceUnit.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\InterferenceUnit\\InterferenceUnit.cs",
+              "RelativeToolTip": "Assets\\InterferenceUnit\\InterferenceUnit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:01:23.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommChannelController.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CommChannelController.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\CommChannelController.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\CommChannelController.cs",
+              "RelativeToolTip": "Assets\\combatunit\\CommChannelController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAgwAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:46:13.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RangeSphereVisualizer.cs",
+              "DocumentMoniker": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\RangeSphereVisualizer.cs",
+              "RelativeDocumentMoniker": "Assets\\combatunit\\RangeSphereVisualizer.cs",
+              "ToolTip": "D:\\UNITY HUB EDITIOR\\projects\\My project (1)\\Assets\\combatunit\\RangeSphereVisualizer.cs",
+              "RelativeToolTip": "Assets\\combatunit\\RangeSphereVisualizer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwEgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T16:15:35.971Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
