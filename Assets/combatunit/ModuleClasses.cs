@@ -5,18 +5,6 @@ using UnityEngine;
 public class ModuleClasses : MonoBehaviour
 {
 
-
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
 }
 
 
