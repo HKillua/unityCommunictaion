@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/menu/menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Mountain Terrain rocks and tree/Scenes/TerrainScene_01.unity
+    guid: d7647d3daa595e343a71e54345cf2915
+  - enabled: 1
+    path: Assets/Scenes/Mountain Terrain rocks and tree/Scenes/UIScene.unity
+    guid: ef7c6bf74c4ee994d8290690ff5a4af4
   m_configObjects: {}
