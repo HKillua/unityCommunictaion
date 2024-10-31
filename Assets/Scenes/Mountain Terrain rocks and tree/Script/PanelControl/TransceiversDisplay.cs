@@ -20,7 +20,7 @@ public class TransceiversDisplay : MonoBehaviour
         combatUnit = FindObjectOfType<CombatUnit>();
         if (combatUnit != null)
         {
-            Debug.Log("successfully get a combatUnit for display"); 
+            //Debug.Log("successfully get a combatUnit for display"); 
         }
         
     }

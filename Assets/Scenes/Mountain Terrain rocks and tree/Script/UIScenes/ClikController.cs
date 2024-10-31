@@ -12,19 +12,19 @@ public class ClickController : MonoBehaviour
     public static CombatUnit SelectedCombat;
 
 
-    public UILoader sceneUILoader;    // 控制场景UI加载器
+    //public UILoader sceneUILoader;    // 控制场景UI加载器
 
 
     private void Start()
     {
         chooseCamera = GameObject.FindObjectOfType<Camera>();
-        sceneUILoader = GetComponent<UILoader>();    //目的是之后更改UIloader里面的事件函数
-        sceneUILoader.OnSceneChanged += handleSceneChanged; 
+        //sceneUILoader = GetComponent<UILoader>();    //目的是之后更改UIloader里面的事件函数
+        //sceneUILoader.OnSceneChanged += handleSceneChanged; 
     }
 
     private void OnDestroy()
     {
-        sceneUILoader.OnSceneChanged -= handleSceneChanged; 
+        //sceneUILoader.OnSceneChanged -= handleSceneChanged; 
 
     }
 
@@ -33,12 +33,12 @@ public class ClickController : MonoBehaviour
        if (Input.GetButtonDown("Fire1"))    //监听的是鼠标左键
         {
             var ray = chooseCamera.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red, 1f); 
+            Debug.Log("click object"); 
             if (Physics.Raycast(ray,out var hitInfo))
             {
                 var combatunit = hitInfo.collider.GetComponent<CombatUnit>(); //得到的鼠标选中的模型上的CombatUnit
                 SelectedCombat = combatunit;
-                OnselectCombatUnitChanged?.Invoke(combatunit); 
+                OnselectCombatUnitChanged?.Invoke(SelectedCombat); 
             }
         }
        if (Input.GetKeyDown(KeyCode.Escape))
