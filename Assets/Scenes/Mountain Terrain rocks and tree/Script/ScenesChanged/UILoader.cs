@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UILoader : MonoBehaviour
 {
-    public event Action<CombatUnit> OnSceneChanged; // 场景变化的时候消除显示的UI
+    //public event Action<CombatUnit> OnSceneChanged; // 场景变化的时候消除显示的UI
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.V))
