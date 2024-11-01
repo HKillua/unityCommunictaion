@@ -41,10 +41,47 @@ public class TransceiverPanel : MonoBehaviour
         }
     }
 
-    void DisplayTransceivers(CombatUnit _combatunit )
+    // 显示对应的信息并且增加修改的监听事件
+    void DisplayInformation(GameObject panel , Transceiver transceiver, int i)
     {
-        //ClearDisplay(transceiversContent);  // 清楚之前显示过的痕迹
+        // 设置elementname显示出来
+        panel.transform.Find("ElementName").GetComponent<TMP_Text>().text = $"Transceiver {i}";
 
+        // 设置typeDropdown组件
+        TMP_Dropdown typeDropdown = panel.transform.Find("TypeDropdown").GetComponent<TMP_Dropdown>();
+        typeDropdown.ClearOptions();
+        List<string> options = new List<string>(Enum.GetNames(typeof(TransceiverType)));
+        typeDropdown.AddOptions(options);
+        typeDropdown.value = (int)transceiver.type;   // 设置typeDown组件会显示的类型
+        typeDropdown.onValueChanged.AddListener((value) => transceiver.type = (TransceiverType)value);
+
+
+        // 设置InputFiled显示
+        TMP_InputField frequencyInput = panel.transform.Find("FrequencyInput").GetComponent<TMP_InputField>();
+        frequencyInput.text = transceiver.frequency.ToString();
+        frequencyInput.onEndEdit.AddListener((value) => transceiver.frequency = int.Parse(value));
+
+        TMP_InputField powerInput = panel.transform.Find("PowerInput").GetComponent<TMP_InputField>();
+        powerInput.text = transceiver.power.ToString();
+        powerInput.onEndEdit.AddListener((value) => transceiver.power = float.Parse(value));
+
+        TMP_InputField sensitivityInput = panel.transform.Find("SensitivityInput").GetComponent<TMP_InputField>();
+        sensitivityInput.text = transceiver.sensitivity.ToString();
+        sensitivityInput.onEndEdit.AddListener((value) => transceiver.sensitivity = float.Parse(value));
+
+        TMP_InputField modulationInput = panel.transform.Find("ModulationInput").GetComponent<TMP_InputField>();
+        modulationInput.text = transceiver.modulation;
+        modulationInput.onEndEdit.AddListener((value) => transceiver.modulation = value);
+
+        TMP_InputField bandwidthInput = panel.transform.Find("BandwidthInput").GetComponent<TMP_InputField>();
+        bandwidthInput.text = transceiver.bandwidth.ToString();
+        bandwidthInput.onEndEdit.AddListener((value) => transceiver.bandwidth = float.Parse(value));
+
+    }
+
+
+    void DisplayTransceivers(CombatUnit _combatunit )
+    { 
 
         for (int i = 0; i < _combatunit.transceivers.Count; i++)
         {
@@ -52,39 +89,8 @@ public class TransceiverPanel : MonoBehaviour
             GameObject panel = Instantiate(panelPrefab, transceiversContent); ;
    
             Transceiver transceiver = _combatunit.transceivers[i];   // 获得到接收机的信息
-            // 设置elementname显示出来
-            panel.transform.Find("ElementName").GetComponent<TMP_Text>().text = $"Element {i}";
 
-            // 设置typeDropdown组件
-            TMP_Dropdown typeDropdown = panel.transform.Find("TypeDropdown").GetComponent<TMP_Dropdown>();
-            typeDropdown.ClearOptions();
-            List<string> options = new List<string>(Enum.GetNames(typeof(TransceiverType)));
-            typeDropdown.AddOptions(options);
-            typeDropdown.value = (int)transceiver.type;   // 设置typeDown组件会显示的类型
-            typeDropdown.onValueChanged.AddListener((value) => transceiver.type = (TransceiverType)value);
-
-
-            // 设置InputFiled显示
-            TMP_InputField frequencyInput = panel.transform.Find("FrequencyInput").GetComponent<TMP_InputField>();
-            frequencyInput.text = transceiver.frequency.ToString();
-            frequencyInput.onEndEdit.AddListener((value) => transceiver.frequency = int.Parse(value));
-
-            TMP_InputField powerInput = panel.transform.Find("PowerInput").GetComponent<TMP_InputField>();
-            powerInput.text = transceiver.power.ToString();
-            powerInput.onEndEdit.AddListener((value) => transceiver.power = float.Parse(value));
-
-            TMP_InputField sensitivityInput = panel.transform.Find("SensitivityInput").GetComponent<TMP_InputField>();
-            sensitivityInput.text = transceiver.sensitivity.ToString();
-            sensitivityInput.onEndEdit.AddListener((value) => transceiver.sensitivity = float.Parse(value));
-
-            TMP_InputField modulationInput = panel.transform.Find("ModulationInput").GetComponent<TMP_InputField>();
-            modulationInput.text = transceiver.modulation;
-            modulationInput.onEndEdit.AddListener((value) => transceiver.modulation = value);
-
-            TMP_InputField bandwidthInput = panel.transform.Find("BandwidthInput").GetComponent<TMP_InputField>();
-            bandwidthInput.text = transceiver.bandwidth.ToString();
-            bandwidthInput.onEndEdit.AddListener((value) => transceiver.bandwidth = float.Parse(value));
-
+            DisplayInformation(panel , transceiver ,i);    
             // 此处可以添加后续的删除逻辑
         }
 
