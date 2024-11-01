@@ -20,7 +20,7 @@ public class MaterialSelector : MonoBehaviour
         if (materials != null && materials.Length > 0)
         {
             selectedMaterialIndex = Mathf.Clamp(selectedMaterialIndex, 0, materials.Length - 1);
-            objRenderer.material = materials[selectedMaterialIndex];
+            objRenderer.material = materials[selectedMaterialIndex]; // 
         }
     }
 

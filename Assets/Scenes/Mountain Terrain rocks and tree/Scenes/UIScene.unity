@@ -35808,7 +35808,6 @@ GameObject:
   - component: {fileID: 1987479854}
   - component: {fileID: 1987479853}
   - component: {fileID: 1987479852}
-  - component: {fileID: 1987479851}
   m_Layer: 5
   m_Name: ChannelPanel
   m_TagString: Untagged
@@ -35842,18 +35841,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.3616791, y: -0.3774414}
   m_SizeDelta: {x: -20.1161, y: -23.831}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1987479851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987479849}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b2c428973b8c341a8296ba34923a3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1987479852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35861,7 +35848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987479849}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ddd51ed35e835439090c76b8de6ef1, type: 3}
   m_Name: 
