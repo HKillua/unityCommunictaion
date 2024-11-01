@@ -6290,6 +6290,7 @@ GameObject:
   - component: {fileID: 362904356}
   - component: {fileID: 362904358}
   - component: {fileID: 362904357}
+  - component: {fileID: 362904359}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -6354,6 +6355,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362904355}
   m_CullTransparentMesh: 1
+--- !u!114 &362904359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362904355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16aacb70c73ba3e47a15cef7fab32477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4519283081955570362, guid: 5b7b52c248615db46b76a3120f2abe7c, type: 3}
 --- !u!1 &364076139
 GameObject:
   m_ObjectHideFlags: 0
@@ -27191,7 +27205,7 @@ GameObject:
   - component: {fileID: 1596054947}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
