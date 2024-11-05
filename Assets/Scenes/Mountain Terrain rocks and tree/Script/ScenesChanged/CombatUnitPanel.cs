@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
+using UnityEngine.UI;
 public class CombatUnitPanel : MonoBehaviour
 {
     public GameObject itemUIPrefab;  // 用于显示的UI模板
@@ -26,20 +27,29 @@ public class CombatUnitPanel : MonoBehaviour
         foreach (CombatUnit unit in combatUnits)
         {
             GameObject item = Instantiate(itemUIPrefab,panelContainer);
-            // 此处可以添加依据CombatUnit里面的信息进行UI部分的显示
+            // 此处可以添加依据CombatUnit里面的信息进行UI部分的显示、
+            item.GetComponentInChildren<TMP_Text>().text = unit.gameObject.name;
 
-            
+            Button removeButton = item.GetComponentInChildren<Button>();
+            //if (removeButton == null) Debug.Log("this is a null button"); 
+            removeButton.onClick.AddListener(() => RemoveCombatUnit(unit)); 
         }
            
     }
 
     public void RemoveCombatUnit(CombatUnit unit)
     {
-        Destroy (unit.gameObject);
+        Destroy(unit.gameObject);
 
-        UpdateCombatUnitList(); 
+        // UpdateCombatUnitList();  
+        StartCoroutine(DelaydUpdateCombatUnitList()); 
     }
 
-    
+    private IEnumerator DelaydUpdateCombatUnitList()
+    {
+        yield return null;
+
+        UpdateCombatUnitList();
+    }
 
 }
