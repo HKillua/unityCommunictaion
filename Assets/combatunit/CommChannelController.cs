@@ -188,7 +188,7 @@ public class CommChannelController : MonoBehaviour
 
         // 更新粒子系统的发射速率
         var emission = particleSystemInstance.emission;
-
+       
         if (capacityMbps < 20)
         {
             cylinderRadius = Mathf.Lerp(0.1f, 0.2f, Mathf.InverseLerp(0, 20, capacityMbps));
@@ -202,7 +202,7 @@ public class CommChannelController : MonoBehaviour
             cylinderRadius = Mathf.Lerp(0.45f, 0.55f, Mathf.InverseLerp(200, 1000, capacityMbps));
         }
         particleSize = 0.15f + cylinderRadius;
-        emission.rateOverTime = 1;
+        emission.rateOverTime = 1; // 
 
         // 更新圆柱体的形状
         UpdateChannel();

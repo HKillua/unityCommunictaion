@@ -89,7 +89,7 @@ public class TransceiverPanel : MonoBehaviour
             GameObject panel = Instantiate(panelPrefab, transceiversContent); ;
    
             Transceiver transceiver = _combatunit.transceivers[i];   // 获得到接收机的信息
-
+            // 将transceiver和panel上的组件关联起来，方便做到数据的修改
             DisplayInformation(panel , transceiver ,i);    
             // 此处可以添加后续的删除逻辑
         }
