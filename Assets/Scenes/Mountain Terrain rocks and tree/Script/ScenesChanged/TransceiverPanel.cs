@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class TransceiverPanel : MonoBehaviour
 {
-    private CombatUnit combatunit;     // 需要显示的是哪一个CombatUnit当中的内容
+    private CombatUnit combatunit;              // 需要显示的是哪一个CombatUnit当中的内容
     public Transform transceiversContent;       // panel需要显示的地方
-    public GameObject panelPrefab;    //需要显示的panel的预制件
+    public GameObject panelPrefab;              //需要显示的panel的预制件
 
 
     public void Bind(CombatUnit _combatunit)
@@ -86,14 +86,14 @@ public class TransceiverPanel : MonoBehaviour
         for (int i = 0; i < _combatunit.transceivers.Count; i++)
         {
             Debug.Log("i will display the content of transceivers");
-            GameObject panel = Instantiate(panelPrefab, transceiversContent); ;
+            GameObject panel = Instantiate(panelPrefab, transceiversContent); 
    
             Transceiver transceiver = _combatunit.transceivers[i];   // 获得到接收机的信息
             // 将transceiver和panel上的组件关联起来，方便做到数据的修改
             DisplayInformation(panel , transceiver ,i);    
             // 此处可以添加后续的删除逻辑
         }
-
+        
     }
     
 }

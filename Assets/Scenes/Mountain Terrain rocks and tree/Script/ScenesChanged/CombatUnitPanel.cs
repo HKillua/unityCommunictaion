@@ -3,12 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 public class CombatUnitPanel : MonoBehaviour
 {
     public GameObject itemUIPrefab;  // 用于显示的UI模板
     public Transform panelContainer; // 用于放置UI的content
 
-    private List<CombatUnit> combatUnits = new List<CombatUnit>(); 
+    public static event Action UpdateCombatUI; 
+
+    private List<CombatUnit> combatUnits = new List<CombatUnit>();
+
+    private void Awake()
+    {
+        UpdateCombatUI += UpdateCombatUnitList; 
+    }
+
+
+    private void OnDestroy()
+    {
+        UpdateCombatUI -= UpdateCombatUnitList; 
+    }
+
+    public static void UpdateUITrigger()
+    {
+        UpdateCombatUI?.Invoke(); 
+    }
 
     void Start()
     {
@@ -27,12 +46,14 @@ public class CombatUnitPanel : MonoBehaviour
         foreach (CombatUnit unit in combatUnits)
         {
             GameObject item = Instantiate(itemUIPrefab,panelContainer);
-            // 此处可以添加依据CombatUnit里面的信息进行UI部分的显示、
-            item.GetComponentInChildren<TMP_Text>().text = unit.gameObject.name;
 
+            // 此处可以添加依据CombatUnit里面的信息进行UI部分的显示、
+
+            item.GetComponentInChildren<TMP_Text>().text = unit.gameObject.name;
+            item.GetComponentInChildren<Image>().sprite = unit.CombatImage;
             Button removeButton = item.GetComponentInChildren<Button>();
-            //if (removeButton == null) Debug.Log("this is a null button"); 
             removeButton.onClick.AddListener(() => RemoveCombatUnit(unit)); 
+
         }
            
     }
@@ -49,6 +70,7 @@ public class CombatUnitPanel : MonoBehaviour
     {
         yield return null;
 
+        ClickController.ClearUIscene();     //删除场景中的物体之后还要去完成
         UpdateCombatUnitList();
     }
 

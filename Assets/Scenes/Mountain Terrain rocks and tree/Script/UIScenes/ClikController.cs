@@ -61,4 +61,9 @@ public class ClickController : MonoBehaviour
         OnselectCombatUnitChanged?.Invoke(combatunit);
     }
 
+    // 用于清楚删除场景中的模型之后清除窗口的UI函数
+    public static void ClearUIscene()
+    {
+        OnselectCombatUnitChanged?.Invoke(null); 
+    }
 }
