@@ -7,12 +7,13 @@ public class CombatUnit : MonoBehaviour
     public delegate void DataChanged();
     public event DataChanged OnDataChanged;
 
-    [SerializeField]
+
+    public CombatUnitType UnitType;
+    public Sprite CombatImage;
     public List<Transceiver> transceivers = new List<Transceiver>();
-    [SerializeField]
     public List<Antenna> antennas = new List<Antenna>();
 
-   
+    
     public void AddTransceiver(Transceiver newTransceiver)
     {
         transceivers.Add(newTransceiver);

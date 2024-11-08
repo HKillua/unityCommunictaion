@@ -15,21 +15,26 @@ public class Transceiver
     public int frequency;
     public float power;
     public float sensitivity;
-    public string modulation;
+    public string modulation = "null";
     public float bandwidth; // 新增的通信带宽属性
 }
 
 [System.Serializable]
 public class Antenna
 {
-    public string type;
+    public string type = "null";
     public float gain;
     public Vector3 direction;
     public float beamWidth;
-    public string polarization; // 新增的极化方式属性
+    public string polarization = "null"; // 新增的极化方式属性
 }
 
-
+// 方便表示CombatUnit单元上面的模型类型
+public enum CombatUnitType
+{
+    car, 
+    airplane, 
+}
 public enum TransceiverType
 {
     Type0,

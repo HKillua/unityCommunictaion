@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class DragSpan : MonoBehaviour, IPointerDownHandler
 {
@@ -30,11 +31,24 @@ public class DragSpan : MonoBehaviour, IPointerDownHandler
             _objDragSpawning.transform.position = ray.GetPoint(10);
 
 
-            //结束拖拽
+            RaycastHit hit;    // 
+            if (Physics.Raycast(ray,out hit) )
+            {
+                if (hit.collider != null && hit.collider.gameObject != _objDragSpawning)
+                {
+                    _objDragSpawning.transform.position = hit.point;
+                }
+            }  // 
+
+
+
+
+            //结束拖拽 , 同时调用刷新显示函数
             if (Input.GetMouseButtonUp(0))
             {
                 _isDragSpawning = false;
                 _objDragSpawning = null;
+                CombatUnitPanel.UpdateUITrigger();
             }
         }
     }
@@ -63,6 +77,15 @@ public class DragSpan : MonoBehaviour, IPointerDownHandler
             _objDragSpawning = Instantiate(prefab);
             _objDragSpawning.transform.SetParent(null);
             _isDragSpawning = true;
+
+            Rigidbody rb = _objDragSpawning.GetComponent<Rigidbody>(); // 
+            if (rb == null)
+            {
+                rb = _objDragSpawning.AddComponent<Rigidbody>();
+            }
+            rb.isKinematic = true;  // 
+
+
         }
     }
 

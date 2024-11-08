@@ -525,6 +525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0807fbaa8c0d054e934928de6dc31fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitType: 0
+  CombatImage: {fileID: 0}
   transceivers:
   - type: 0
     frequency: 2147483647
