@@ -24,6 +24,7 @@ public class CombatUnitPanel : MonoBehaviour
         UpdateCombatUI -= UpdateCombatUnitList; 
     }
 
+    // 创建实际的物体的时候会调用这部分的逻辑
     public static void UpdateUITrigger()
     {
         UpdateCombatUI?.Invoke(); 
@@ -51,6 +52,7 @@ public class CombatUnitPanel : MonoBehaviour
 
             item.GetComponentInChildren<TMP_Text>().text = unit.gameObject.name;
             item.GetComponentInChildren<Image>().sprite = unit.CombatImage;
+            // 添加删除逻辑
             Button removeButton = item.GetComponentInChildren<Button>();
             removeButton.onClick.AddListener(() => RemoveCombatUnit(unit)); 
 
@@ -70,7 +72,7 @@ public class CombatUnitPanel : MonoBehaviour
     {
         yield return null;
 
-        ClickController.ClearUIscene();     //删除场景中的物体之后还要去完成
+        ClickController.ClearUIscene();     //删除场景中的物体后，清除右边两个显示状态栏里面的内容
         UpdateCombatUnitList();
     }
 

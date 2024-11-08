@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class AntennaPanel : MonoBehaviour
 {
@@ -86,6 +87,18 @@ public class AntennaPanel : MonoBehaviour
         polarizationInput.text = antenna.polarization;
         polarizationInput.onEndEdit.AddListener((value) => antenna.polarization = value);
 
+        int index = i;
+        Button deleteButton = panel.transform.Find("DeleteButton").GetComponent<Button>();
+        deleteButton.onClick.AddListener(() => DeleteAntenna(index));
+    }
+
+    private void DeleteAntenna(int index)
+    {
+        if (combatunit != null)
+        {
+            combatunit.RemoveAntenna(index);
+            UpdateUI(combatunit);   // À¢–¬œ‘ æ
+        }
     }
 
 

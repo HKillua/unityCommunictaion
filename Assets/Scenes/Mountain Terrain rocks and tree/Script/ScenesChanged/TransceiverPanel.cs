@@ -77,6 +77,12 @@ public class TransceiverPanel : MonoBehaviour
         bandwidthInput.text = transceiver.bandwidth.ToString();
         bandwidthInput.onEndEdit.AddListener((value) => transceiver.bandwidth = float.Parse(value));
 
+
+        // 将删除按钮和对应的元素进行顺序绑定
+        int index = i;
+        Button deleteButton = panel.transform.Find("DeleteButton").GetComponent<Button>();
+        deleteButton.onClick.AddListener(() => DeleteTransceiver(index));
+
     }
 
 
@@ -92,6 +98,19 @@ public class TransceiverPanel : MonoBehaviour
             // 将transceiver和panel上的组件关联起来，方便做到数据的修改
             DisplayInformation(panel , transceiver ,i);    
             // 此处可以添加后续的删除逻辑
+
+           
+        }
+        
+    }
+
+    private void DeleteTransceiver(int index)
+    {
+        if (combatunit != null)
+        {
+            combatunit.RemoveTransceiver(index);
+            // 删除之后要重新刷新显示UI 
+            UpdateUI(combatunit); 
         }
         
     }
